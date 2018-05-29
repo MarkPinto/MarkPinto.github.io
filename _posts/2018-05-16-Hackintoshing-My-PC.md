@@ -59,7 +59,7 @@ You will need the following to follow this guide:
 
 First things first, one of the things that we need access to is a Mac. Now this can either be a legitimate Mac or a hackintosh; there is also an option to do this through a virtual machine (maybe I'll do a write up on that process one day). With access to Mac OS, you will now want to make use of the App Store to download the Mac OS High Sierra update. While getting the update through the App Store I ran into a problem that seems to be common with Sierra users which is an incomplete download of the update (5-20 MB download instead of 6GB). What I did to overcome this issue is to use the tool [macOS High Sierra Patcher.](http://dosdude1.com/highsierra/) Upon opening the tool click "Tools" on the menubar and then "Download macOS High Sierra...", you will then be asked if you want to proceed, click "Yes" and pick a location for the download (I picked the Applications folder).
 
-![macOS High Sierra Patcher](/assets/img/hackintosh_high_sierra_patcher.jpg "macOS High Sierra Patcher in action")
+![macOS High Sierra Patcher](/assets/img/2018-05-16-Hackintoshing-My-PC/hackintosh_high_sierra_patcher.jpg "macOS High Sierra Patcher in action")
 
 # Setting up the USB
 
@@ -85,7 +85,7 @@ Now you will install Clover on the USB you just created. Run the Clover package 
 
 After checking these options click install and wait for the process to finish and then you have successfully installed Clover.
 
-![Clover Install Package](/assets/img/hackintosh_clover_install.jpg "Installing Clover on the macOS install media")
+![Clover Install Package](/assets/img/2018-05-16-Hackintoshing-My-PC/hackintosh_clover_install.jpg "Installing Clover on the macOS install media")
 
 ## Installing Kexts to the EFI folder
 
@@ -113,10 +113,11 @@ Open Clover Configurator and click file then open and navigate to /Volumes/EFI/E
 
 Upon opening the file, change the following settings:
 
-
 Under the ACPI tab:
 
-Uncheck all of the DSDT fixes
+Uncheck all of the DSDT fixes listed under "patches"
+
+![ACPI Tab](/assets/img/2018-05-16-Hackintoshing-My-PC/hackintosh_acpi.jpg "All DSDT fixes are unchecked")
 
 Under the SMBIOS tab:
 
