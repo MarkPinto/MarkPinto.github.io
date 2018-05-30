@@ -121,13 +121,25 @@ Uncheck all of the DSDT fixes listed under "patches"
 
 Under the SMBIOS tab:
 
-For hardware select ""
+For hardware select "iMac11,2"
+
+Click the arrows and pick the following hardware configuration
+
+![SMBIOS Tab](/assets/img/2018-05-16-Hackintoshing-My-PC/hackintosh_smbios.jpg "Selecting iMac11,2")
 
 On the Serial field click generate
 
+Open terminal and run the command uuidgen, this command will output a bunch of numbers and letters, copy it and paste it into the SmUUID field. Copy the data from the Board Serial field and switch to the RtVariables tab.
 
+Under the RtVariables tab:
 
-Click the arrows and pick the following hardware configuration
+Paste the data from the Board Serial field from the SMBIOS tab into the MLB field.
+
+Under the ROM field set it as UseMacAddr0
+
+Under the BooterConfig field set it to 0x28
+
+Under 
 
 
 # Installation
