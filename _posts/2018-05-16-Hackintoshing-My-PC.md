@@ -121,7 +121,7 @@ Uncheck all of the DSDT fixes listed under "patches"
 
 Under the SMBIOS tab:
 
-For hardware select "iMac11,2"
+For hardware select "iMac11,2 - Intel Core i3-540 @ 3.06 GHz"
 
 Click the arrows and pick the following hardware configuration
 
