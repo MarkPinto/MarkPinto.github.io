@@ -121,15 +121,15 @@ Uncheck all of the DSDT fixes listed under "patches"
 
 Under the SMBIOS tab:
 
-For hardware select "iMac11,2 - Intel Core i3-540 @ 3.06 GHz"
+Click the arrows and pick the following hardware configuration "iMac11,2 - Intel Core i3-540 @ 3.06 GHz"
 
-Click the arrows and pick the following hardware configuration
-
-![SMBIOS Tab](/assets/img/2018-05-16-Hackintoshing-My-PC/hackintosh_smbios.jpg "Selecting iMac11,2")
+![SMBIOS Tab](/assets/img/2018-05-16-Hackintoshing-My-PC/hackintosh_smbios_device.jpg "Selecting iMac11,2")
 
 On the Serial field click generate
 
 Open terminal and run the command uuidgen, this command will output a bunch of numbers and letters, copy it and paste it into the SmUUID field. Copy the data from the Board Serial field and switch to the RtVariables tab.
+
+![SMBIOS Tab](/assets/img/2018-05-16-Hackintoshing-My-PC/hackintosh_smbios.jpg "Filling in the blank SMBIOS fields")
 
 Under the RtVariables tab:
 
@@ -139,7 +139,12 @@ Under the ROM field set it as UseMacAddr0
 
 Under the BooterConfig field set it to 0x28
 
-Under 
+Under the CsrActiveConfig field to 0x3E7
 
+![RtVariables Tab](/assets/img/2018-05-16-Hackintoshing-My-PC/hackintosh_rt_variables.jpg "Filing in the blank RtVariables fields")
+
+You can now save your changes and start to install macOS on your PC
 
 # Installation
+
+Insert your install media into your PC and boot off of it. Clover will start up and ask you to choose what device to boot off of; select the install media and wait as the macOS isntaller boots up. Once the installer boots up
