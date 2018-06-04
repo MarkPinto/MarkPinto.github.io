@@ -147,4 +147,8 @@ You can now save your changes and start to install macOS on your PC
 
 # Installation
 
-Insert your install media into your PC and boot off of it. Clover will start up and ask you to choose what device to boot off of; select the install media and wait as the macOS isntaller boots up. Once the installer boots up
+Insert your install media into your PC and boot off of it. Clover will start up and ask you to choose what device to boot off of; select the install media and wait as the macOS isntaller boots up. Once the installer boots up, use disk utility to format the hard drive you plan to use to Mac OS Extended (Journaled) using whatever name you please. Then choose to install macOS to that hard drive. The install will take a while and will automatically reboot. Upon reboot, clover will again pop up, asking you to choose what device to boot off of, this time choose to boot off of the hard rive that you installed macOS onto. The computer will then begin to boot up and you will go through the basic setup asking for information such as Apple ID, username, password, etc. Once all that information is entered you should boot into the desktop, only needing to do one more step. Before moving onto the next section eject and remove your install media.
+
+# Post Install
+
+You may notice that everything is working well except for audio, sound would only come out of the TVs I was using as monitors and not the external speakers. If you take a look at the audio setting you will see that under sound output, there is a lack of other sources for output. In order to fix this you must download Clover Configurator. Once you run Clover Configurator click on the Mount EFI tab listed under Tools. Here you will find a list of hard drives, click "Mount" on the hard drive labeled EFI. Once the EFI drive is mounted go to the menubar and click "File" then "Open" and navigate to the following directory "" and open the .plist file. Once you open it up navigate to the 
