@@ -516,25 +516,20 @@
                         <form name="sentMessage" id="contactForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe28p-RhN_hit8nGA60XND-Uk_3668cgbXUgilmgLAEoBV5HA/formResponse">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input type="text" name="entry.535723818" class="form-control p-4" id="name" placeholder="Your Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <input type="text" name="entry.535723818" class="form-control p-4" id="name" placeholder="Your Name" required="required" oninvalid="this.setCustomValidity('Please enter your name')" oninput="this.setCustomValidity('')"/>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <input type="email" name="entry.1329578666" class="form-control p-4" id="email" placeholder="Your Email"
-                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <input type="email" name="entry.1329578666" class="form-control p-4" id="email" placeholder="Your Email" required="required" oninvalid="this.setCustomValidity('Please enter your email')" oninput="this.setCustomValidity('')"/>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <input type="text" name="entry.645725833" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <input type="text" name="entry.645725833" class="form-control p-4" id="subject" placeholder="Subject" required="required" oninvalid="this.setCustomValidity('Please enter a subject')" oninput="this.setCustomValidity('')"/>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea name="entry.171288941" class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
+                                <textarea name="entry.171288941" class="form-control py-3 px-4" rows="5" id="message" placeholder="Message" required="required" oninvalid="this.setCustomValidity('Please enter your Message')" oninput="this.setCustomValidity('')"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
