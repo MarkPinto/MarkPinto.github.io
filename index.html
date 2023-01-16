@@ -522,7 +522,13 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe28p-RhN_hit8nGA60XND-Uk_3668cgbXUgilmgLAEoBV5HA/formResponse">
+                        
+                        <!-- https://blog.webjeda.com/google-form-customize/ grabbed redirection code from there -->
+                        <script type="text/javascript">var submitted=false;</script>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='submit.html';}"></iframe>
+                        <!-- https://blog.webjeda.com/google-form-customize/ grabbed redirection code from there -->
+                        
+                        <form name="sentMessage" id="contactForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe28p-RhN_hit8nGA60XND-Uk_3668cgbXUgilmgLAEoBV5HA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <input type="text" name="entry.535723818" class="form-control p-4" id="name" placeholder="Your Name" required="required" oninvalid="this.setCustomValidity('Please enter your name')" oninput="this.setCustomValidity('')"/>
