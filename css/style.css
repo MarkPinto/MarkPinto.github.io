@@ -1,3 +1,5 @@
+/* Search for the following when you update the color/theme: ".form-control:focus {" or goto line 1916 and update rgba for box-shadow*/
+
 /******* Bootstrap Theming ********/
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -1911,7 +1913,7 @@ pre code {
   background-color: #fff;
   border-color: #62f7df;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(11, 206, 175, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(100,181,246, 0.25); /*Change this whenever the websites theme/color is updated, leave 4th variable 0.25 alone*/
 }
 
 .form-control::placeholder {
